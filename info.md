@@ -458,6 +458,3 @@
 - The Wire. (s.f.). *Digital exclusion: Poor, elderly face the brunt of Aadhaar-based authentication errors.* [thewire.in](https://m.thewire.in/article/rights/digital-exclusion-poor-elderly-face-the-brunt-of-aadhaar-based-authentication-errors)
 - Economic and Political Weekly. (s.f.). *Aadhaar failures, food services, welfare.* [epw.in](https://www.epw.in/engage/article/aadhaar-failures-food-services-welfare)
 
----
-
-> **Nota sobre la clasificación Extorsión / Desempleo:** de los 11 casos de la categoría Clase, solo dos encajan estrictamente en esos dos tipos: MiDAS (Michigan) = Desempleo, y Robodebt (Australia) = Extorsión (cobro coactivo de deudas generadas algorítmicamente). El resto son otras formas de daño algorítmico por clase socioeconómica (salud, vivienda familiar, vigilancia laboral, subsidios).
