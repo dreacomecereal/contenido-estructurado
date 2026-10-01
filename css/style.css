@@ -8,16 +8,22 @@
 */
 
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
-
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-
-  --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
+  --color-background: #d9ef03;
+  --color-text: #000000;
+  --color-accent: #26004f;
+  --color-hover: #ff0000;
+  --font-family-base: "input-serif", system-ui, Arial, Helvetica, sans-serif;
+  --font-display-var: "lores-15", sans-serif;
+  --font-display-weight: 700
+  --font-display-style: normal;
+  --font-text-var: "input-serif", serif;
+  --font-text-weight: 400;
+  --font-text-style: normal;
+  --font-size-body: 5vw;
+  --font-size-h1: 29vw;
+  --font-size-h2: 2.5vw;
   --font-size-h3: 1.25rem;
+  --font-size-text: 1rem;
 }
 
 /*
@@ -30,11 +36,6 @@
 
 * {
   box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 1px solid;
 }
 
 
@@ -47,10 +48,8 @@
 */
 body {
   margin: 0;
-
   background-color: var(--color-background);
   color: var(--color-text);
-
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
 }
@@ -63,18 +62,89 @@ body {
   HTML define la jerarquía.
   CSS controla su representación visual.
 */
+#titulo {
+  text-align: center;
+}
 
 h1 {
+  margin: 1rem;
+  font-family: var(--font-display-var);
+  font-weight: var(--font-display-weight);
+  font-style: var(--font-display-style);
   font-size: var(--font-size-h1);
 }
 
-h2 {
-  font-size: var(--font-size-h2);
+p {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  margin-bottom: 4rem;
+}
+.label p {
+  margin: 10rem;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+}
+.header p {
+  margin: 1em 10rem 10rem 10rem;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+}
+h2.label {
+  margin: 1em 0;
+  font-family: var(--font-display-var);
+  font-weight: var(--font-display-weight);
+  font-style: var(--font-display-style);
+  font-size: var(--font-size-body);
+}
+h2 small {
+      display: block;
+    font-size: .5em;
 }
 
-h3 {
+h2 i {
+      font-size: .5em;
+    display: block;
+}
+
+h3.label {
   font-size: var(--font-size-h3);
 }
+
+#tagline {
+  text-align: center;
+  font-size: 2vw;
+  margin: 1em 10em 6em 10em;
+}
+
+ul {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-tex-style);
+  font-size: var(--font-size-body);
+}
+
+
+li {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  margin: 1rem 0;
+}
+
+summary {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+}
+
 
 
 /*
@@ -87,6 +157,12 @@ h3 {
 
 a {
   color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover);
+  text-decoration: none;
 }
 
 
@@ -119,8 +195,15 @@ main {
   ============================================================
 */
 
-header,
-main,
+.lista-indice {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+}
+
 footer {
   padding: 2rem;
 }
