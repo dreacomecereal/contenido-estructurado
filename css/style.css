@@ -96,7 +96,7 @@ p {
   font-size: var(--font-size-text);
 }
 h2.label {
-  margin: 1em 0;
+  margin: 4rem 0;
   font-family: var(--font-display-var);
   font-weight: var(--font-display-weight);
   font-style: var(--font-display-style);
@@ -119,7 +119,7 @@ h3.label {
 #tagline {
   text-align: center;
   font-size: 2vw;
-  margin: 1em 10em 6em 10em;
+  margin: 3em 10em 6em 10em;
 }
 
 ul {
@@ -143,9 +143,20 @@ summary {
   font-weight: var(--font-text-weight);
   font-style: var(--font-text-style);
   font-size: var(--font-size-text);
+  margin: 1rem 0;
+}
+.date-container {
+  /* font-size: .75em; */
+  margin-bottom: .5em;
+}
+time {
+  font-weight: 600;
 }
 
-
+summary small {
+  display: block;
+  font-style: italic;
+}
 
 /*
   ============================================================
@@ -158,6 +169,16 @@ summary {
 a {
   color: var(--color-accent);
   text-decoration: none;
+}
+
+.volver {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 4rem;
+  padding: .5rem 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  text-decoration: none;
+  border-radius: .25rem;
 }
 
 a:hover {
@@ -215,3 +236,4 @@ section {
 nav a {
   margin-right: 1rem;
 }
+
